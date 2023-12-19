@@ -1,7 +1,9 @@
 # dependencies
 /node_modules
 
+/.vscode
 /build
+/extractedTranslations
 # testing
 /coverage
 

@@ -12,7 +12,11 @@
         // (require() module.exports)=commonjs
         "esModuleInterop": true,
         //позволяет использовать import без дополнительных настроек(* as)
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "paths": {
+            "*": ["src/*"]
+        }
     },
     "ts-node": {
         "compilerOptions": {

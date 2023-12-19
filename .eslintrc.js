@@ -3,7 +3,11 @@ module.exports = {
         browser: true,
         es2021: true,
     },
-    extends: ['plugin:react/recommended', 'airbnb'],
+    extends: [
+        'plugin:react/recommended',
+        'airbnb',
+        'plugin:i18next/recommended',
+    ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaFeatures: {
@@ -12,18 +16,19 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint'],
+    plugins: [
+        'react',
+        '@typescript-eslint',
+        'i18next',
+    ],
     rules: {
-        indent: [2, 4],
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
-        'react/jsx-filename-extension': [
-            2,
-            { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
-        ],
+        indent: [2, 4],
+        'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.tsx'] }],
         'import/no-unresolved': 'off',
         'import/prefer-default-export': 'off',
-        'no-unused-vars': 'off',
+        'no-unused-vars': 'warn',
         'react/require-default-props': 'off',
         'react/react-in-jsx-scope': 'off',
         'react/jsx-props-no-spreading': 'warn',
@@ -32,16 +37,9 @@ module.exports = {
         'import/extensions': 'off',
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
-        'comma-dangle': 'off',
-        'comma-style': ['warn', 'last'],
-        'implicit-arrow-linebreak': 'off',
-        'jsx-quotes': 'off',
-        'no-unneeded-ternary': 'off',
-        'object-curly-newline': 'off',
+        'i18next/no-literal-string': ['error', { markupOnly: true }],
     },
     globals: {
         __IS_DEV__: true,
-        __API__: true,
-        __PROJECT__: true,
     },
 };

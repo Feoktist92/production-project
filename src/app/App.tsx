@@ -1,12 +1,11 @@
-import React from 'react';
-import { Suspense } from 'react';
+import React, { Suspense } from 'react';
 
 import { Navbar } from 'widgets/Navbar';
-import { AppRouter } from './providers/router';
 import { Sidebar } from 'widgets/Sidebar';
+import { classNames } from 'shared/lib/classNames';
+import { AppRouter } from './providers/router';
 
 import { useTheme } from './providers/ThemeProvider';
-import { classNames } from 'shared/lib/classNames';
 
 import './styles/index.scss';
 

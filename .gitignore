@@ -1,6 +1,7 @@
 # dependencies
 /node_modules
 
+/storybook-static
 /.vscode
 /build
 /extractedTranslations

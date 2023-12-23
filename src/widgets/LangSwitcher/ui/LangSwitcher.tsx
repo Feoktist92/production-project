@@ -6,8 +6,9 @@ import { classNames } from 'shared/lib/classNames';
 
 interface LangSwitcherProps {
     className?: string;
+    short?: boolean;
 }
-export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
+export const LangSwitcher: FC<LangSwitcherProps> = ({ className, short }) => {
     const { t, i18n } = useTranslation();
 
     const changeLanguage = () => {
@@ -17,10 +18,10 @@ export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
     return (
         <Button
             className={classNames('', {}, [className])}
-            theme={ThemeButton.CLEAR}
+            theme={ThemeButton.BACKGROUND_INVERTED}
             onClick={changeLanguage}
         >
-            {t('Язык')}
+            {t(short ? 'Короткий язык' : 'Язык')}
         </Button>
     );
 };

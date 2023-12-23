@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { classNames } from 'shared/lib/classNames';
+import { classNames } from 'shared/lib/classNames/classNames';
 import { Loader } from 'shared/ui';
 import styles from './PageLoader.module.scss';
 

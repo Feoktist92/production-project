@@ -2,7 +2,6 @@ import React, {
     FC, ReactNode, useCallback, useEffect, useRef, useState,
 } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { useTheme } from 'app/providers/ThemeProvider';
 import styles from './Modal.module.scss';
 import Portal from '../Portal/Portal';
 
@@ -11,15 +10,17 @@ interface ModalProps {
     children?: ReactNode;
     isOpen?: boolean;
     onClose?: ()=> void;
+    lazy?: boolean;
 }
-
 const ANIMATION_DELAY = 300;
-const Modal: FC<ModalProps> = (props) => {
+
+export const Modal: FC<ModalProps> = (props) => {
     const {
-        className, children, onClose, isOpen,
+        className, children, onClose, isOpen, lazy,
     } = props;
 
     const [isClosing, setIsClosing] = useState(false);
+    const [isMounted, setIsMounted] = useState(false);
     const timeRef = useRef<ReturnType<typeof setTimeout>>();
 
     const mods: Record<string, boolean> = {
@@ -58,6 +59,16 @@ const Modal: FC<ModalProps> = (props) => {
         };
     }, [isOpen, onKeydown]);
 
+    useEffect(() => {
+        if (isOpen) {
+            setIsMounted(true);
+        }
+    }, [isOpen]);
+
+    if (lazy && !isMounted) {
+        return null;
+    }
+
     return (
         <Portal>
             <div className={classNames(styles.Modal, mods, [className])}>
@@ -75,5 +86,3 @@ const Modal: FC<ModalProps> = (props) => {
 
     );
 };
-
-export default Modal;

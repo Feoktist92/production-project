@@ -13,5 +13,7 @@
     "Бросить ошибку": "Throw error",
     "Войти": "Sign in",
     "Увеличить": "Increment",
-    "Уменьшить": "Decrement"
+    "Уменьшить": "Decrement",
+    "Введите логин": "Enter login",
+    "Введите пароль": "Enter password"
 }

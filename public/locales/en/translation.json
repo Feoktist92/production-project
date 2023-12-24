@@ -11,5 +11,7 @@
     "Произошла непредвиденная ошибка": "An unexpected error occurred",
     "Обновить страницу": "Refresh page",
     "Бросить ошибку": "Throw error",
-    "Войти": "Sign in"
+    "Войти": "Sign in",
+    "Увеличить": "Increment",
+    "Уменьшить": "Decrement"
 }

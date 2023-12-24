@@ -18,7 +18,6 @@ const Modal: FC<ModalProps> = (props) => {
     const {
         className, children, onClose, isOpen,
     } = props;
-    const { theme } = useTheme();
 
     const [isClosing, setIsClosing] = useState(false);
     const timeRef = useRef<ReturnType<typeof setTimeout>>();
@@ -61,7 +60,7 @@ const Modal: FC<ModalProps> = (props) => {
 
     return (
         <Portal>
-            <div className={classNames(styles.Modal, mods, [className, theme])}>
+            <div className={classNames(styles.Modal, mods, [className])}>
                 <div className={styles.overlay} onClick={closeHandler}>
                     <div
                         className={styles.content}

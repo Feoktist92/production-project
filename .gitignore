@@ -5,6 +5,8 @@
 /.vscode
 /build
 /extractedTranslations
+.loki/report.html
+.loki/report.json
 # testing
 /coverage
 

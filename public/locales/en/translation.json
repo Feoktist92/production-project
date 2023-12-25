@@ -12,8 +12,11 @@
     "Обновить страницу": "Refresh page",
     "Бросить ошибку": "Throw error",
     "Войти": "Sign in",
+    "Выйти": "Sign out",
     "Увеличить": "Increment",
     "Уменьшить": "Decrement",
     "Введите логин": "Enter login",
-    "Введите пароль": "Enter password"
+    "Введите пароль": "Enter password",
+    "Вы ввели неверный логин или пароль": "You entered an incorrect login or password",
+    "Форма авторизации": "Login form"
 }

@@ -5,7 +5,6 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useDispatch } from 'react-redux';
 import { userActions } from 'entities/User';
 import { AppRouter } from './providers/router';
-import { useTheme } from './providers/ThemeProvider';
 
 const App = () => {
     const dispatch = useDispatch();
@@ -13,6 +12,7 @@ const App = () => {
     useEffect(() => {
         dispatch(userActions.initAuthData());
     }, [dispatch]);
+
     return (
         <div className={classNames('app', {}, [])}>
             <Suspense fallback="">

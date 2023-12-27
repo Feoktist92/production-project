@@ -1,4 +1,3 @@
-import { Counter } from 'entities/Counter';
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';

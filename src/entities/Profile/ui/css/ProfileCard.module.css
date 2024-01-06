@@ -1,0 +1,22 @@
+.ProfileCard {
+  padding: 20px;
+  border: 2px solid var(--inverted-bg-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editBtn {
+  padding: 6px 15px;
+}
+
+.data {
+  margin-top: 20px;
+}
+
+.input {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=ProfileCard.module.css.map */

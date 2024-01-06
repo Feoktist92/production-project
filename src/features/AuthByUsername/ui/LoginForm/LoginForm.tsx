@@ -59,7 +59,7 @@ const LoginForm = memo(({ className, onSuccess }: LoginFormProps) => {
                     autofocus
                     type="text"
                     className={styles.input}
-                    placeholder={t('Введите username')}
+                    placeholder={t('Введите логин')}
                     onChange={onChangeUsername}
                     value={username}
                 />

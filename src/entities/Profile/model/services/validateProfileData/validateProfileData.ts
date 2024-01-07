@@ -6,7 +6,7 @@ export const validateProfileData = (profile?: Profile) => {
     }
 
     const {
-        first, lastname, age, country, city, username,
+        first, lastname, age, country, username, city,
     } = profile;
 
     const errors: ValidateProfileError[] = [];
@@ -15,20 +15,20 @@ export const validateProfileData = (profile?: Profile) => {
         errors.push(ValidateProfileError.INCORRECT_USER_DATA);
     }
 
-    if (!username) {
-        errors.push(ValidateProfileError.INCORRECT_USERNAME);
-    }
-
     if (!age || !Number.isInteger(age)) {
         errors.push(ValidateProfileError.INCORRECT_AGE);
     }
 
-    if (!city) {
-        errors.push(ValidateProfileError.INCORRECT_CITY);
-    }
-
     if (!country) {
         errors.push(ValidateProfileError.INCORRECT_COUNTRY);
+    }
+
+    if (!username) {
+        errors.push(ValidateProfileError.INCORRECT_USERNAME);
+    }
+
+    if (!city) {
+        errors.push(ValidateProfileError.INCORRECT_CITY);
     }
 
     return errors;

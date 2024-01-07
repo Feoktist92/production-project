@@ -1,7 +1,24 @@
 {
   "Профиль": "Profile",
-  "Редактировать": "Edit",
+  "Редактировать": "Edit profile",
   "Ваша фамилия": "Your last name",
-  "Ваше имя": "Your name",
-  "Произошла ошибка при загрузке профиля": "An error occurred while loading the profile"
+  "Ваше имя": "Your first name",
+  "Произошла ошибка при загрузке профиля": "An error occurred while loading your profile",
+  "Попробуйте обновить страницу": "Try to refresh the page",
+  "Отменить": "Cancel",
+  "Сохранить": "Save",
+  "Город": "City",
+  "Ваш возраст": "Your age",
+  "Имя пользователя": "User name",
+  "Введите имя пользователя": "Enter user name",
+  "Введите ссылку на аватар": "Enter link to avatar",
+  "Серверная ошибка при обновлении": "Server error when updating",
+  "Имя и фамилия обязательны": "Name and surname are required",
+  "Данные не указаны": "Data is not specified",
+  "Некорректный возраст": "Incorrect age",
+  "Некорректная страна": "Incorrect country",
+  "Некорректный город": "Incorrect city",
+  "Некорректный регион": "Incorrect region",
+  "Некорректная валюта": "Incorrect currency",
+  "Некорректное имя пользователя": "Incorrect user name"
 }

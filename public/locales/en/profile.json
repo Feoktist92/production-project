@@ -2,5 +2,6 @@
   "Профиль": "Profile",
   "Редактировать": "Edit",
   "Ваша фамилия": "Your last name",
-  "Ваше имя": "Your name"
+  "Ваше имя": "Your name",
+  "Произошла ошибка при загрузке профиля": "An error occurred while loading the profile"
 }

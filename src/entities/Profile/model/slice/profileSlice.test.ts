@@ -7,11 +7,11 @@ import { Currency } from 'entities/Currency';
 const data = {
     username: 'admin',
     age: 22,
-    country: Country.Russia,
+    country: Country.Ukraine,
     lastname: 'ulbi tv',
     first: 'asd',
-    city: 'moscow',
-    currency: Currency.RUB,
+    city: 'asf',
+    currency: Currency.USD,
 };
 
 describe('profileSlice.test', () => {
@@ -65,7 +65,7 @@ describe('profileSlice.test', () => {
         });
     });
 
-    test('test update profile service fulfilled', () => {
+    test('test update profile service fullfiled', () => {
         const state: DeepPartial<ProfileSchema> = {
             isLoading: true,
         };

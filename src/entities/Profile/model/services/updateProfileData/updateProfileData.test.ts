@@ -1,3 +1,4 @@
+import { userActions } from 'entities/User';
 import { TestAsyncThunk } from 'shared/lib/tests/TestAsyncThunk/TestAsyncThunk';
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
@@ -7,11 +8,12 @@ import { updateProfileData } from './updateProfileData';
 const data = {
     username: 'admin',
     age: 22,
-    country: Country.Russia,
+    country: Country.Ukraine,
     lastname: 'ulbi tv',
     first: 'asd',
     city: 'asf',
-    currency: Currency.RUB,
+    currency: Currency.USD,
+    id: '1',
 };
 
 describe('updateProfileData.test', () => {

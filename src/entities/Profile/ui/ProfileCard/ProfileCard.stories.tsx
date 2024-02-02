@@ -20,11 +20,11 @@ Primary.args = {
     data: {
         username: 'admin',
         age: 22,
-        country: Country.Russia,
+        country: Country.Ukraine,
         lastname: 'ulbi tv',
         first: 'asd',
         city: 'asf',
-        currency: Currency.RUB,
+        currency: Currency.USD,
         avatar,
     },
 };

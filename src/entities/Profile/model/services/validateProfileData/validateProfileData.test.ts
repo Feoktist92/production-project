@@ -6,10 +6,11 @@ import { validateProfileData } from './validateProfileData';
 const data = {
     username: 'admin',
     age: 22,
-    country: Country.Russia,
+    country: Country.Ukraine,
     lastname: 'ulbi tv',
     first: 'asd',
     city: 'asf',
+    currency: Currency.USD,
 };
 
 describe('validateProfileData.test', () => {
@@ -50,8 +51,6 @@ describe('validateProfileData.test', () => {
             ValidateProfileError.INCORRECT_USER_DATA,
             ValidateProfileError.INCORRECT_AGE,
             ValidateProfileError.INCORRECT_COUNTRY,
-            ValidateProfileError.INCORRECT_USERNAME,
-            ValidateProfileError.INCORRECT_CITY,
         ]);
     });
 });

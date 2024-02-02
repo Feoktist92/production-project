@@ -23,5 +23,10 @@
     "Укажите валюту": "Specify currency",
     "Укажите страну": "Specify country",
     "Статьи": "Articles",
-    "Комментарии отсутствуют": "Comments are not available"
+    "Комментарии отсутствуют": "Comments are not available",
+    "Введите текст комментария": "Enter comment text",
+    "Отправить": "Send",
+    "Комментарии": "Comments",
+    "Статья не найдена": "Article not found",
+    "Произошла ошибка при загрузке статьи.": "An error occurred while loading the article."
 }

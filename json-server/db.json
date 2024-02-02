@@ -87,21 +87,21 @@
   "comments": [
     {
       "id": "1",
-      "text": "some comment",
+      "text": "очень интересная статья",
       "postId": "1",
       "articleID ": "1",
       "userId": "1"
     },
     {
       "id": "2",
-      "text": "some comment 2",
+      "text": "статья прекрасная",
       "postId": "1",
       "articleID ": "1",
       "userId": "1"
     },
     {
       "id": "3",
-      "text": "some comment 3",
+      "text": "статья немного устарела",
       "postId": "2",
       "articleID ": "1",
       "userId": "1"
@@ -112,13 +112,15 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "admin"
+      "role": "admin",
+      "avatar": "https://thumb.tildacdn.com/tild6465-6132-4937-b964-336163313261/-/resize/824x/-/format/webp/mem-2-1024x683.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "1234",
-      "role": "user"
+      "role": "user",
+      "avatar": "https://thumb.tildacdn.com/tild6465-6132-4937-b964-336163313261/-/resize/824x/-/format/webp/mem-2-1024x683.jpg"
     }
   ],
   "profile": {

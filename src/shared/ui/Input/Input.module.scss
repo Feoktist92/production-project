@@ -1,15 +1,12 @@
 .InputWrapper {
     display: flex;
-    font-family: var(--font-family-main);
 }
 
 .placeholder {
     margin-right: 5px;
-    font-family: inherit;
 }
 
 .input {
-    font-family: inherit;
     background: transparent;
     border: none;
     outline: none;

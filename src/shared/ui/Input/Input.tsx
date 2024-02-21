@@ -1,8 +1,8 @@
-import { Mods, classNames } from 'shared/lib/classNames/classNames';
+import { classNames, Mods } from 'shared/lib/classNames/classNames';
 import React, {
-    InputHTMLAttributes, ReactEventHandler, memo, useEffect, useRef, useState,
+    InputHTMLAttributes, memo, useEffect, useRef, useState,
 } from 'react';
-import styles from './Input.module.scss';
+import cls from './Input.module.scss';
 
 type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange' | 'readOnly'>
 
@@ -51,28 +51,28 @@ export const Input = memo((props: InputProps) => {
         setIsFocused(true);
     };
 
-    const onSelect = (e: React.FocusEvent<HTMLInputElement>) => {
+    const onSelect = (e: any) => {
         setCaretPosition(e?.target?.selectionStart || 0);
     };
 
     const mods: Mods = {
-        [styles.readonly]: readonly,
+        [cls.readonly]: readonly,
     };
 
     return (
-        <div className={classNames(styles.InputWrapper, mods, [className])}>
+        <div className={classNames(cls.InputWrapper, {}, [className])}>
             {placeholder && (
-                <div className={styles.placeholder}>
-                    {`${placeholder} >`}
+                <div className={cls.placeholder}>
+                    {`${placeholder}>`}
                 </div>
             )}
-            <div className={styles.caretWrapper}>
+            <div className={cls.caretWrapper}>
                 <input
                     ref={ref}
                     type={type}
                     value={value}
                     onChange={onChangeHandler}
-                    className={styles.input}
+                    className={cls.input}
                     onFocus={onFocus}
                     onBlur={onBlur}
                     onSelect={onSelect}
@@ -81,7 +81,7 @@ export const Input = memo((props: InputProps) => {
                 />
                 {isCaretVisible && (
                     <span
-                        className={styles.caret}
+                        className={cls.caret}
                         style={{ left: `${caretPosition * 9}px` }}
                     />
                 )}
